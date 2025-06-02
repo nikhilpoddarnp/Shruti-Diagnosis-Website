@@ -36,10 +36,11 @@ function parseJWT(jwt) {
 }
 
 function getBaseUri(){
-    var baseUris = window.location.origin.split("/");
-    const baseUri = baseUris[0] + "//" + baseUris[2];
-    console.log(baseUri);
-    return baseUri;
+    // var baseUris = window.location.origin.split("/");
+    // const baseUri = baseUris[0] + "//" + baseUris[2];
+    // console.log(baseUri);
+    // return baseUri;
+    return "https://shruti-diagnosis-website.onrender.com";
 }
 
 export { checkJWT, getUserId, getBaseUri };
