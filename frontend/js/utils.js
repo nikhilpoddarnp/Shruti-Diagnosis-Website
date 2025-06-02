@@ -7,7 +7,7 @@ function checkJWT(){
         localStorage.setItem('loginRole', payload.role);
     } catch(error){
         localStorage.clear();
-        window.location.href = "../html/index.html";
+        window.location.href = "../index.html";
     }
 }
 
