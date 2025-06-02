@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Diagnosis</title>
+    <link rel="stylesheet" href="../css/display_appointment.css"> 
+    <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <br/><br/><br/><br/>
+    
+    <div class="button-container">
+        <div class="filter-container">
+            <label for="status-filter">Filter by Status: </label>
+            <select id="status-filter" onchange="filterAppointments()">
+                <option value="ALL">All</option>
+                <option value="OPEN">Open</option>
+                <option value="CONFIRMED">Confirmed</option>
+                <option value="IN_PROGRESS">In Progress</option>
+                <option value="COMPLETED">Completed</option>
+                <option value="CANCELLED">Cancelled</option>
+            </select>
+        </div>
+        <button class="top-right-button"><a href="../html/book_appointment.html">Book Appointment</a></button>
+    </div>
+
+    <div class="table-container">
+        <table id="appointments-table">
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Appointment Date</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Report</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="appointments-body">
+                <!-- Data from API will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <br/><br/><br/><br/>
+    <div id="footer-container"></div>
+
+    <script  type="module" src="../js/display_appointment.js"></script> 
+    <script type="module" src="../js/header_footer.js"></script>
+</body>
+</html>

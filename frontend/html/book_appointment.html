@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shruti Diagnosis</title>
+  <link rel="stylesheet" href="../css/book_appointment.css">
+  <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div class="appointment-container">
+    <h1 class="form-title">Book an Appointment</h1>
+    <form id="appointment-form">
+      
+      <div class="form-group">
+        <label for="appointment-date">Select Appointment Date</label>
+        <input type="datetime-local" id="appointment-date" name="appointment-date" class="form-input" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" class="form-textarea" placeholder="Describe the purpose of your appointment"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Book Appointment</button>
+      </div>
+    </form>
+
+    <p id="error-message" style="color: red;"></p>
+    <p id="iso-datetime"></p>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div id="footer-container"></div>
+
+
+  <script  type="module" src="../js/book_appointment.js"></script>
+  <script type="module" src="../js/header_footer.js"></script>
+</body>
+</html>

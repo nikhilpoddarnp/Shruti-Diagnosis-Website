@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Diagnosis</title>
+    <link rel="stylesheet" href="../css/update_user.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <br/><br/><br/><br/>
+
+    <div class="form-container">
+        <form id="updateUserForm">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" readonly><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+
+            <label for="role">Role:</label>
+            <input type="text" id="role" name="role" readonly><br>
+            <br>
+            <label for="mobile">Mobile No</label>
+            <input type="tel" id="mobile" name="mobile" pattern="^[6-9]\d{9}$" required>
+            <small>Enter a 10-digit mobile number</small><br>
+            <div class="button-container">
+                <button type="submit" class="update-btn">Update</button>
+                <button type="button" id="cancelButton" class="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <br/><br/><br/>
+
+    <div id="footer-container"></div>
+
+    <script type="module" src="../js/update_user.js"></script>
+    <script type="module" src="../js/header_footer.js"></script>
+
+</body>
+</html>

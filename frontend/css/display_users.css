@@ -1,0 +1,83 @@
+/* Basic styling */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.table-container {
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+
+.filter-button-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+.filter-container {
+    display: flex;
+    align-items: center; 
+    margin-left: 20%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20%;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center; 
+    margin-left: 20%;
+}
+  
+.add-user-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .add-user-btn a {
+    text-decoration: none;
+    color: white; 
+  }
+  
+  .add-user-btn:hover {
+    background-color: #45a049;
+  }
+
+
+  
+  
+  button.save {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  button.cancel {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  

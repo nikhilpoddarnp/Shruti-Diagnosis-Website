@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Diagnosis</title>
+    <link rel="stylesheet" href="../css/create_user.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <br/><br/><br/><br/>
+    
+    <div class="form-container">
+        <h2>Add User</h2>
+        <form id="addUserForm" onsubmit="return validateForm(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Role</label>
+                <select id="role" name="role" required>
+                    <option value="ADMIN" selected>ADMIN</option>
+                    <option value="USER">USER</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile No</label>
+                <input type="tel" id="mobile" name="mobile" pattern="^[6-9]\d{9}$" required>
+                <small>Enter a 10-digit mobile number</small>
+            </div>
+            <button type="submit">Add User</button>
+        </form>
+        <div id="error-message" class="error-message"></div>
+    </div>
+
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <div id="footer-container"></div>
+
+    <script  type="module" src="../js/create_user.js"></script>
+    <script type="module" src="../js/header_footer.js"></script>
+</body>
+</html>

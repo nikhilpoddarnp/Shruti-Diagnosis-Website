@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Diagnosis</title>
+    <link rel="stylesheet" href="../css/user_profile.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <br><br><br>
+
+    <div class="profile-container">
+        <!-- Left side: User Details -->
+        <div class="left-section">
+            <h2>User Profile</h2>
+            <div class="user-details">
+                <p><strong>Name:</strong> <span id="userName"></span></p>
+                <p><strong>Email:</strong> <span id="userEmail"></span></p>
+                <p><strong>Mobile:</strong> <span id="userMobile"></span></p>
+            </div>
+            
+            <a href="javascript:void(0);" id="updatePasswordLink">Update Password</a>
+
+            <div id="updatePasswordForm" class="hidden">
+                <form>
+                    <input type="password" id="currentPassword" placeholder="Current Password" required><br>
+                    <input type="password" id="newPassword" placeholder="New Password" required><br>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br>
+                    <button type="submit">Update Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <br><br><br> <br><br><br>  <br><br><br>
+    
+    <div id="footer-container"></div>
+    
+    <script type="module" src="../js/user_profile.js"></script>
+    <script type="module" src="../js/header_footer.js"></script>
+</body>
+</html>

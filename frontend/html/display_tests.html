@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shruti Diagnosis</title>
+  <link rel="stylesheet" href="../css/display_tests.css">
+  <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <br/><br/><br/><br/>
+
+  <div class="filter-button-container">
+    <!-- Filter Container -->
+    <div class="filter-container">
+        <input type="text" id="titleFilter" placeholder="Search by title" oninput="filterTable()" value="">
+        <label for="isActiveFilter">
+            <input type="checkbox" id="isActiveFilter" onchange="filterTable()" checked> Show Active Only
+        </label>
+    </div>
+    
+    <!-- Button Container -->
+    <div class="button-container">
+        <button class="add-test-btn"><a href="../html/create_tests.html">Add Test</a></button>
+    </div>
+  </div>
+  <div class="table-container">
+    <table id="testTable">
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>isActive</th>
+          <th>Price</th>
+          <th>Discount</th>
+          <th>Image</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic content will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+  <br/><br/><br/><br/>
+  <div id="footer-container"></div>
+
+  <script type="module" src="../js/display_tests.js"></script>
+  <script type="module" src="../js/header_footer.js"></script>
+</body>
+</html>

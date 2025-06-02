@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shruti Diagnosis</title>
+  <link rel="stylesheet" href="../css/display_request_call.css">
+  <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <br/><br/><br/><br/>
+
+  <div class="filter-button-container">
+    <!-- Filter Container -->
+    <div class="filter-container">
+            <select id="statusFilter" onchange="filterTable()">
+                <option value="ALL">All</option>
+                <option value="OPEN">Open</option>
+                <option value="CONNECTED">Connected</option>
+            </select>
+    </div>
+  </div>
+  <div class="table-container">
+    <table id="requestCallTable">
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Name</th>
+          <th>Mobile</th>
+          <th>Comment</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic content will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+  <br/><br/><br/><br/>
+  <div id="footer-container"></div>
+
+  <script type="module" src="../js/display_request_call.js"></script>
+  <script type="module" src="../js/header_footer.js"></script>
+</body>
+</html>

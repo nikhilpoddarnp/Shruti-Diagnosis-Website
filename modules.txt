@@ -1,0 +1,19 @@
+npm i mongose 
+
+npm i express
+
+npm i crypto-js   
+
+npm i -D nodemode
+
+npm install uuid
+
+npm install jsonwebtoken
+
+npm install express multer
+
+npm install cors
+
+npm install nodemailer
+
+

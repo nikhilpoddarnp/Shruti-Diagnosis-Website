@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Diagnosis</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <br/><br/><br/><br/>
+
+    <div class="request-a-call-container" id="requestCall">
+      <form id="requestCallForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="mobile">Mobile No:</label>
+          <input type="text" id="mobile" name="mobile" required>
+          <div id="mobileError" class="error"></div>
+        </div>
+  
+        <button type="submit">Request a Call</button>
+      </form>
+    </div>
+    <br><br><br>
+    <div class="package-container" id="package_container">
+      <h3>Popular Packages</h3>
+        <div class="top-packages"> </div>
+    
+        <div class="bottom-packages"> </div>
+    
+        
+        <div class="navigation">
+          <button class="package-prev" onclick="movePackages(-1)">&#10094; Prev</button>
+          <button class="package-next" onclick="movePackages(1)">Next &#10095;</button>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="test-container" id="test_container">
+        <h3>Popular Tests</h3>
+          <div class="top-tests"> </div>
+      
+          
+          <div class="bottom-tests"> </div>
+      
+          <div class="navigation">
+            <button class="test-prev" onclick="moveTests(-1)">&#10094; Prev</button>
+            <button class="test-next" onclick="moveTests(1)">Next &#10095;</button>
+          </div>
+        </div>
+
+    <br/><br/><br/>
+
+    <div id="footer-container"></div>
+
+    <script type="module" src="../js/index.js"></script>
+    
+    <script type="module" src="../js/header_footer.js"></script>
+</body>
+</html>

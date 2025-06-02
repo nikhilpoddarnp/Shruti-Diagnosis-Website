@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Diagnosis</title>
+    <link rel="stylesheet" href="../css/update_package.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <br/><br/><br/><br/>
+
+    <div class="form-container">
+        <form id="updatePackageForm">
+
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title"><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea><br>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price"><br>
+
+            <label for="discount">Discount:</label>
+            <input type="number" id="discount" name="discount"><br>
+
+            <label for="isActive">Is Active:</label>
+            <input type="checkbox" id="isActive" name="isActive"><br>
+            
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image"><br>
+            <div class="button-container">
+                <button type="submit" class="update-btn">Update</button>
+                <button type="button" id="cancelButton" class="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <br/><br/><br/>
+
+    <div id="footer-container"></div>
+
+    <script type="module" src="../js/update_packages.js"></script>
+    <script type="module" src="../js/header_footer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+.profile-container {
+    display: flex;               
+    justify-content: space-between; 
+    gap: 10px; 
+    padding: 0%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    margin-left: 3%;
+}
+
+.left-section {
+    flex: 1; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.right-section {
+    flex: 1; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 2000px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.user-details p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+
+a#updatePasswordLink {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a#updatePasswordLink:hover {
+    text-decoration: underline;
+}
+
+#updatePasswordForm {
+    margin-top: 20px;
+    display: block;
+}
+
+#updatePasswordForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#updatePasswordForm button {
+    background-color: #007BFF;
+}
+
+#updatePasswordForm button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+

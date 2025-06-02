@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Diagnosis</title>
+    <link rel="stylesheet" href="../css/package_details.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <br/><br/><br/><br/>
+
+    <div class="package-container">
+        <!-- Package Details -->
+        <div id="package_detail_container"></div>
+
+        <div id="edit-package-container">
+          <button id="edit-package-btn" style="display: none;">Edit</button>
+      </div>
+
+        <br><br>
+        <!-- Items List -->
+        <h2>Tests in the Package</h2>
+        <table id="items-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th class="action_test_header" style="display: none;">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tests-list">
+                
+            </tbody>
+        </table>
+
+        <br>
+        <div class="add-test-btn">
+            <button id="add-test-btn" style="display: none;">Add Test</button>
+        </div>
+    </div>
+
+    <div id="search-modal" class="search-modal">
+        <div class="modal-content">
+            <h2>Search Test</h2>
+            <input type="text" id="search-input" placeholder="Search by title...">
+            <button id="search-btn">Search</button>
+            <ul id="search-results">
+               
+            </ul>
+        </div>
+    </div>
+
+    <br/><br/><br/><br/>
+
+    <div id="footer-container"></div>
+
+    <script type="module" src="../js/package_details.js"></script>
+    <script type="module" src="../js/header_footer.js"></script>
+
+</body>
+</html>
